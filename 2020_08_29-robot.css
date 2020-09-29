@@ -1,0 +1,126 @@
+:root {
+    --walk-icon-size: 25px;
+}
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: papayawhip;
+}
+
+div {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.robotWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.robotMenus {
+    display: flex;
+    height: 75px;
+    /*flex: 80px;*/
+    flex-direction: row;
+    /*justify-content: center;*/
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px dotted black;
+}
+
+/*======================================================================*/
+.trailInfo {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+}
+.strong_1 {
+    font-weight: bold;
+    color: red;
+}
+.label-info {
+    padding: 10px 5px 0 10px;
+}
+.input-info {
+    height: 15px;
+    width: 65px;
+    margin-top: 10px;
+}
+
+/*======================================================================*/
+.robotWalkingPath {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    height: auto;
+    border: blue dashed 2px;
+    background-color: deepskyblue;
+}
+
+#trailReplayBanner {
+    position: absolute;
+    top: 2%;
+    left: 45%;
+    color: darkred;
+    visibility: visible;  /* hidden */
+}
+.robotFooterCommands {
+    display: flex;
+    flex-display: row;;
+    height: 40px;
+}
+.buttonDirection {
+    width: 85px;
+    height: 30px;
+    color: yellow;
+    background: linear-gradient(45deg, skyblue, deepskyblue, blue, blueviolet, darkblue);
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.repositoryInfo {
+    border-radius: 5px;
+    padding-left: 5px;
+    border: 2px solid darkred;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    width: 100PX;
+    height: 40px;
+}
+
+
+/**/
+.compassIcon {
+    /*position: absolute;*/
+    width: 40px; height: 40px;
+    /*top: 0%;*/
+    /*left: 50%;*/
+}
+.imageToWalk {
+    position: absolute;
+    width: var(--walk-icon-size);
+    height: var(--walk-icon-size);
+    border-radius: 15%;
+    border: dotted 2px darkred;
+    /* these do not really matter as I override them later */
+    left: 30px;
+    top: 30px;
+}
+.directionNorth {
+    transform: rotate(0deg);
+}
+.directionEast {
+    transform: rotate(90deg);
+}
+.directionSouth {
+    transform: rotate(180deg);
+}
+.directionWest {
+    transform: rotate(270deg);
+}

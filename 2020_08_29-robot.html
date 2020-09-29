@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Robot</title>
+    <link rel="stylesheet" href="2020_08_29-robot.css">
+</head>
+<body>
+    <div class="robotWrapper">
+
+        <div class="robotMenus">
+            <button id="buttonWalk" class="buttonDirection">Walk</button>
+            <button id="buttonTurnLeft" class="buttonDirection">Left</button>
+            <button id="buttonTurnRight" class="buttonDirection">Right</button>
+            <button id="buttonRelayTrail" class="buttonDirection">Replay Trail</button>
+            <button id="buttonReset" class="buttonDirection">Reset</button>
+            <button id="buttonPrintTrailArray" class="buttonDirection">JSON Trail</button>
+            <div class="repositoryInfo">
+                <label>repo:</label> <br>
+                <label>robot-promise</label>
+            </div>
+        </div>
+
+        <div class="trailInfo">
+                <strong class="strong_1">Trail Info</strong>
+                <img src="Compass2.jpg" alt="???" class="compassIcon">
+                <Label class="label-info">  Compass: </Label> <input id="inputWalkDirection" type="text" class="input-info" disabled>
+                <label class="label-info">  Left (%, xPos):</label> <input id="inputXpos" type="text" class="input-info" disabled>
+                <label class="label-info">  Top (% , yPos):</label> <input id="inputYpos" type="text" class="input-info" disabled>
+                <label class="label-info">  Total points:</label> <input id="inputTotalPoints" type="text" class="input-info" disabled>
+                <label class="label-info">  Last Action:</label> <input id="inputLastAction" type="text" class="input-info" disabled>
+                <label class="label-info">  Full Trail:</label> <input id="inputShowFullTrail" type="checkbox" class="input-info" >
+        </div>
+
+
+        <div id="robotPath" class="robotWalkingPath">
+            <!-- This banned is added / removed via property "Visible"-->
+            <!--        <strong id="trailReplayBanner">Trail Replaying .....</strong>-->
+			<!-- this is the area in which the icon will "walk" -->
+        </div>
+
+
+        <div id="robotfooter" class="robotFooterCommands">
+            <div>
+                classList.add('') | classList.remove('') |  element.remove() |
+                transform:  rotate (-90deg) | position: absolute <br>
+            </div>
+            <div>
+                <strong>Notes: </strong>Set the parent div position: relative so the absolute of image is relative "robotWalkingPath
+            </div>
+        </div>
+    </div>
+<script src="2020_08_29-robot.js"></script>
+</body>
+</html>
+
